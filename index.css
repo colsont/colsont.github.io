@@ -1,8 +1,11 @@
 * {
     margin: 0px;
     padding: 0px;
-    /*background-color: #eeeeee;*/
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #eeeeee;
 }
 
 #sidebar {
@@ -14,17 +17,27 @@
     transition: all 1000ms ease;
 }
 
+#sidebar.open {
+    left: 0px;
+}
+
 #sidebar ul li {
     color: #ffffff;
     list-style: none;
     margin: 0px 20px;
     padding: 10px 15px;
     border-bottom: 1px solid;
+    transition: all 500ms ease;
 }
 
-#sidebar ul li img {
+#sidebar ul li:hover {
+    background-color: rgba(0,0,0, 0.3);
+    transition: all 500ms ease;
+}
+
+#sidebar ul img {
     color: #ffffff;
-    margin: 0px -10px;
+    margin: 10px 20px;
     text-decoration: none;
 }
 
@@ -32,10 +45,7 @@
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
-}
-
-#sidebar.active {
-    left: 0px;
+    transition: all 500ms ease;
 }
 
 #sidebar .menu {
@@ -51,4 +61,13 @@
     width: 27px;
     background: #000000;
     margin: 4px 0px;
+}
+
+header {
+    height: 300px;
+    width: 100%;
+    padding: 30px 0px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #f8f8f8;
 }
