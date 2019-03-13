@@ -2,30 +2,39 @@
 
 <html>
 
-    <head>
-        <title>TSA Webmaster</title>
-        
-        <link rel="icon" type="image/ico" href="logo.png" />
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    </head>
+   <head>
+       <title>TSA Webmaster</title>
+      
+       <link rel="icon" type="image/ico" href="logo.png" />
+       <link rel="stylesheet" type="text/css" href="index.css">
+       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   </head>
 
-    <body>
+   <body>
+       <div id="sidebar">
+           <div class="menu" onclick="openMenu()">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+           <ul>
+               <img src="logo.png" alt="TSA LOGO" width="180" height="117">
+               <li><a href="https://tsa-webmaster.github.io/">Home</a></li>
+               <li><a href="https://dreamlizards.000webhostapp.com/webmasterTSA.html">TSA</a></li>
+               <li><a href="https://dreamlizards.000webhostapp.com/webmasterSTEM.html">STEM at Exeter</a></li>
+               <li><a href="https://dreamlizards.000webhostapp.com/webmasterBAND.html">Dream Lizards</a></li>
+           </ul>
+       </div>
 
+       <header id="header">
+            <h1>TSA Webmaster</h1>
+            <div style="text-align: center; color: #0070DA; font-size: 20px;">
+    </header>
 
-        <nav>
-            <img src="logo.png" alt="TSA LOGO">
-            <button href="#home">Home</button>
-            <button href="#dreamlizards">Dream Lizards</button>
-            <button href="#stem">STEM At Exeter</button>
-            <button href="#patsa">PATSA</button>
-        </nav>
-
-        <script>
-            function functionName () {
-                
-            }
-        </script>
-        
-    </body>
+       <script>
+        function openMenu() {
+            document.getElementById("sidebar").classList.toggle('open');
+        }
+       </script>
+   </body>
 </html>
