@@ -1,3 +1,7 @@
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
 section div h1{
     text-align: center;
 }
@@ -21,18 +25,17 @@ section{
 }
  
 .navbar{
-    background-color: rgb(96, 255, 75);
+    background-color: rgb(214, 202, 176);
+    color: #54504C;
 }
+
  
 .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
-    background-color: rgba(96, 255, 75, 0.76);
+    background-color:  rgba(214, 202, 176, 0.76);
     margin-top: 7.5px;
     margin-left: 0px;
     border-style: none;
 }
  
-body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 

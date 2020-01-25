@@ -1,0 +1,30 @@
+#modelI-intro {
+	background-image: url("modeli.jpg");
+	background-size: cover;
+}
+
+#modelOneHead {
+	margin-top: 60px;
+	font-size: 60px;
+	color: #54504C;
+	font-weight: bolder;
+}
+
+#modelOneOrderButton{
+	text-align: center;
+}
+
+.orderBtn{
+	padding: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+	background-color:  #d6cab0;
+	border-radius: 50px;
+	color: #54504C;
+	font-weight: bold;
+	outline: none !important;
+}
+
+.orderBtn:active{
+	outline: none;
+}
