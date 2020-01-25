@@ -26,6 +26,9 @@ section{
  
 .navbar{
     background-color: rgb(214, 202, 176);
+}
+
+nav a{
     color: #54504C;
 }
 
