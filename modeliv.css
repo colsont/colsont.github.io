@@ -75,8 +75,9 @@ nav a{
 
 #modelI-info {
 	background-image: url("modeliv2.jpg");
-	background-size: 1600px 1200px;
-	background-position-x: -100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: left;
 	color: #ffffff;
 }
 
