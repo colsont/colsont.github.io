@@ -21,7 +21,7 @@ section{
 }
  
 #modelOverview{
-    background-image: url("Images\modelIV.jpg");
+    background-image: url("Images\modeliv.jpg");
 }
  
 .navbar{
@@ -44,7 +44,7 @@ nav a{
 #modelI-intro {
 	background-image: url("modeliv.png");
 	background-repeat: no-repeat;	
-	background-size: 1636px 925px;
+	background-size: cover;
 }
 
 #modelOneHead {
