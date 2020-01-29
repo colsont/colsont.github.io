@@ -20,7 +20,7 @@
 }
 
 #brandOverviewBox{
-	text-align: center; 
+	width: 100%;
 }
 
 section{
@@ -29,6 +29,7 @@ section{
 
 #brandOverviewContent{
 	font-size: 100px;
+	text-align: center;
 }
 
 
