@@ -12,20 +12,19 @@
 }
 
 .content {
-  	position: fixed;
-  	color: #2f446b;
-  	width: 100%;
+  	position: relative;
+	margin-top: 250px;
+  	color: white;
   	padding: 20px;
 	z-index: 1;
+	background: rgba(150, 150, 255, 0.4) ;
 }
 
 #brandOverviewBox{
 	width: 100%;
 }
 
-section{
-	overflow: hidden;
-}
+
 
 #brandOverviewContent{
 	font-size: 100px;
