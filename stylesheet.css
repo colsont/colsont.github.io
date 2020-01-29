@@ -20,25 +20,23 @@ section{
     height: 100vh;
 }
  
-#modelOverview{
-    background-image: url("Images\modelIV.jpg");
-}
- 
 .navbar{
-    background-color: rgb(214, 202, 176);
+    background-color: #2f446b;
 }
 
 nav a{
-    color: #54504C;
+    color: #ffffff;
 }
-
  
 .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
-    background-color:  rgba(214, 202, 176, 0.76);
+    background-color:  rgba(47, 68, 107, 0.76);
     margin-top: 7.5px;
     margin-left: 0px;
     border-style: none;
+	color: #ffffff;
 }
- 
 
+.dropdown-item {
+	color: #ffffff;
+}

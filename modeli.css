@@ -123,3 +123,19 @@ h5 {
 	width: 100%;
 	background-color: #383F51;
 }
+
+/* Third Section of Model I page*/
+
+#modelI-specsText{
+	width: 100%;
+	height: 200px;
+	background-color: #383F51;
+}
+
+#modelI-specs {
+	background-image: url("modeli_S3.jpg");
+	background-size: cover;
+	background-position-y: center;
+}
+
+
