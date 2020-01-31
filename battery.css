@@ -44,8 +44,7 @@ nav a{
 #modelI-intro {
 	background-image: url("battery.jpg");
 	background-repeat: no-repeat;	
-	background-size: 1500px;
-	background-position: center;
+	background-size: cover;
 }
 
 #modelOneHead {
@@ -77,7 +76,8 @@ nav a{
 #modelI-info {
 	background-image: url("battery_s2.jpg");
 	background-repeat: no-repeat;
-	background-size: 900px;
+	background-size: cover;
+	background-position-x: -350px;
 	color: #ffffff;
 }
 
