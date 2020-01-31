@@ -119,7 +119,18 @@ h5 {
 	outline: #54504C;
 }
 
-#line {
+.line {
 	height: 10px;
 	width: 100%;
+}
+
+#modelI-Spec{
+	width: 100%;
+	height: 250px;
+	background-color: #2f446b;
+}
+
+#modelI-SpecSec{
+	background-image: url("modeli_S3.jpg");
+	background-size: cover;
 }
