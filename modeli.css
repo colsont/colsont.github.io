@@ -11,10 +11,7 @@ section div h1{
     background-color: white;
 }
  
-.container{
-    width: 100%;
-    height: 100vh;
-}
+
  
 section{
     width: 100%;
@@ -55,8 +52,9 @@ nav a{
 	font-weight: bolder;
 }	
 
-#modelOneOrderButton{
+.modelOneOrderButton{
 	text-align: center;
+	align-content: center;
 }
 
 .orderBtn{
@@ -121,5 +119,35 @@ h5 {
 
 #line {
 	height: 10px;
+	width: 100%;
+}
+
+#modelI-Spec{
+	background-position-y: 20px;
+	background-image: url("modeli_spec.jpg");
+	background-size: cover;
+	color: white;
+}
+
+#modelI-specInfo{
+	width: 100%;
+	height: 240px;
+	background-color: #203345;
+}
+
+.specs{
+	text-align: center;
+	align-content: center;
+}
+
+#modelI-finalOrder{
+	background-color: rgb(192, 192, 192);
+}
+
+#finalOrder{
+	color: #2f446b;
+	text-align: center;
+	align-content: center;
+	height: 100vh;
 	width: 100%;
 }

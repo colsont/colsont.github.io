@@ -32,4 +32,23 @@
 	text-align: center;
 }
 
+div h3{
+	text-align: center;
+}
+
+div h5{
+	text-align: center;
+}
+
+div p{
+	text-align: center;
+}
+
+#closingBrand{
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.527);
+	z-index: 1;
+	height: 150px;
+	width: 100%;
+}
 

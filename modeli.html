@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evo Inc. Electric Cars</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -18,6 +19,7 @@
         crossorigin="anonymous"></script>
     <!--Css link-->
     <link rel="stylesheet" href="modeli.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <!--Javascript link-->
     <script src="app.js"></script>
@@ -62,22 +64,22 @@
         </div>
     </nav>
     <section id="modelI-intro">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col align-self-center">
                     <h1 id="modelOneHead">Model I</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-12" id="modelOneOrderButton">
-                    <button class="orderBtn">ORDER NOW</button>
+                <div class="col-12 align-self-center modelOneOrderButton">
+                    <button onclick="soldOut()" class="orderBtn">ORDER NOW</button>
                 </div>
             </div>
         </div>
     </section>
-    <div id="line"></div>
+    <div class="line"></div>
     <section id="modelI-info">
-        <div class="container" id="modelI-infoText">
+        <div class="container-fluid" id="modelI-infoText">
             <div class="row subscriptTitle_MI">
                 <div class="col-xl-12">
                     <br>
@@ -93,7 +95,7 @@
                     <h1>Engineered for the future</h1>
                 </div>
             </div>
-            <div id="row">
+            <div class="row">
                 <div id="col-xl-12">
                     <p>
                         Model I was Evo Inc. first shot at designing a car to be energy efficent and run at an optimal
@@ -103,30 +105,83 @@
                             sastification and efficently as possible?
                         </strong>
                         The Electric battery that our research team created does more than enough to fuel the car and
-                        have it running without the need for an Internal Combustion Engine.
+                        have it running efficently.
                     </p>
                 </div>
-                <div class="col-xl-12">
-                    <div class="col-xl-12" id="modelOneOrderButtonTRANS">
-                        <button class="orderBtn">ORDER NOW</button>
-                    </div>
-                     <div class="row subscriptTitle_MI"> 
-                    <div class="col-xl-12">
-					  <br>
-					  <br>
-					  <br>
-                      <h2><strong>Specs</strong></h5>
+            </div>
+            <div class="row">
+                <div class="col-12 align-self-center modelOneOrderButton">
+                    <button onclick="soldOut()" class="orderBtn">ORDER NOW</button>
+                </div>
+            </div>
+    </section>
+    <div class="line"></div>
+    <section id="modelI-Spec">
+        <div id="modelI-specInfo">
+            <div class="container-fluid specs">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Specs</h2>
                     </div>
                 </div>
-				</div>
-				  <p> 5 Seats </p>
-				  <p> 3600 lbs </p>
-				  <p> 220 miles range </p>
-				  <p> 200 kW (268 hp) </p>                    
+                <br>
+                <div class="row">
+                    <div class="col-3">
+                        <h5>Seating</h5>
+                        <p>5 Seats</p>
+                    </div>
+                    <div class="col-3">
+                        <h5>Weight</h5>
+                        <p>3600 lbs</p>
+                    </div>
+                    <div class="col-3">
+                        <h5>Range</h5>
+                        <p>220 miles range</p>
+                    </div>
+                    <div class="col-3">
+                        <h5>Charger Max</h5>
+                        <p>200 kW (268 hp)</p>
+                    </div>
+
                 </div>
+                <div class="row">
+                    <div class="col-3">
+                        <h5>Drive</h5>
+                        <p>All wheel drive</p>
+                    </div>
+                    <div class="col-3">
+                        <h5>Acceleration</h5>
+                        <p>2.5 secs for 0-55mph</p>
+                    </div>
+                    <div class="col-3">
+                        <h5>Storage</h5>
+                        <p>24 cu ft.</p>
+                    </div>
+                    <div class="col-3">
+                        <h5>Battery</h5>
+                        <p>Long range</p>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
+        </div>
+    </section>
+    <div class="line"></div>
+    <section id="modelI-finalOrder">
+        <div class="container-md">
+            <div class="row" id="finalOrder">
+                <div class="col-6">
+                    <h1 id="modelOneHead">Model I</h1>
+                    <p>Paving the road for innovation</p>
+                    <button onclick="soldOut()" class="orderBtn modelOneOrderButton">ORDER NOW</button>
+                </div>
+                <div class="col-6">
+                    <img src="modeli_finalOrder.png" alt="Model S sketch">
+                </div>
+            </div>
+        </div>
+    </section>
     </section>
 </body>
 
