@@ -1,0 +1,32 @@
+
+
+nav{
+    align-content: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.pageLinks{
+    color: springgreen;
+    border: 2px solid springgreen;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.hoverNav{
+    background-color: red;
+}
+
+.section{
+    width: 100%;
+    background-color: #f2f2f2;
+    height: auto;
+    min-height: 100% !important;
+}
+nav ul li{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
