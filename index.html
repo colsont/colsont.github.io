@@ -22,40 +22,120 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-dark navbar-expand fixed-top" id="nav" onmouseover="opaque(this)"
+	<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="nav" onmouseover="opaque(this)"
 		onmouseout="transparent(this)">
 		<a class="navbar-brand">
 			<img src="images/roughdraft1.png" width="30" height="30" class="d-inline-block align-top" alt=""
 				loading="lazy"> EVE
 		</a>
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Features</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Pricing</a>
-			</li>
-			<li class="nav-item dropdown" id="navDropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="dropDownOpen()"
-					onmouseleave="dropDownClose()">
-					More Info
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen()"
-					onmouseleave="dropDownClose()">
-					<a class="dropdown-item" href="#">Reviews</a>
-					<a class="dropdown-item" href="#">Stock</a>
-					<a class="dropdown-item" href="#">About Us</a>
-					<a class="dropdown-item" href="#">Contact Us</a>
-				</div>
-			</li>
-		</ul>
-	</nav>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+			aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	<section class="body">
+		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#sectionOne">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#sectionTwo">Features</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Pricing</a>
+				</li>
+				<li class="nav-item dropdown" id="navDropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="dropDownOpen()"
+						onmouseleave="dropDownClose()">
+						More Info
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen()"
+						onmouseleave="dropDownClose()">
+						<a class="dropdown-item" href="#">Reviews</a>
+						<a class="dropdown-item" href="#">Stock</a>
+						<a class="dropdown-item" href="#">About Us</a>
+						<a class="dropdown-item" href="#">Contact Us</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="section" id="sectionOne">
+		<div class="css-slider-wrapper">
+			<input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+			<input type="radio" name="slider" class="slide-radio2" id="slider_2">
+			<input type="radio" name="slider" class="slide-radio3" id="slider_3">
+			<input type="radio" name="slider" class="slide-radio4" id="slider_4">
+
+			<!-- Slider Pagination -->
+			<div class="slider-pagination">
+				<label for="slider_1" class="page1"></label>
+				<label for="slider_2" class="page2"></label>
+				<label for="slider_3" class="page3"></label>
+				<label for="slider_4" class="page4"></label>
+			</div>
+
+			<!-- Slider #1 -->
+			<div class="slider slide-1">
+				<img src="images\testing.jpg" alt="">
+				<div class="slider-content">
+					<h4>Page 1 Name</h4>
+					<h2>Description of page 1</h2>
+					<button type="button" class="learn-more-btn" name="button">Learn More</button>
+				</div>
+				<div class="number-pagination">
+					<span>1</span>
+				</div>
+			</div>
+
+			<!-- Slider #2 -->
+			<div class="slider slide-2">
+				<img src="images\testing.jpg" alt="">
+				<div class="slider-content">
+					<h4>Page 2 Name</h4>
+					<h2>Description of page 2</h2>
+					<button type="button" class="learn-more-btn" name="button">Learn More</button>
+				</div>
+				<div class="number-pagination">
+					<span>2</span>
+				</div>
+			</div>
+
+			<!-- Slider #3 -->
+			<div class="slider slide-3">
+				<img src="images\testing.jpg" alt="">
+				<div class="slider-content">
+					<h4>Page 3 Name</h4>
+					<h2>Description of the Page</h2>
+					<button type="button" class="learn-more-btn" name="button">Learn More</button>
+				</div>
+				<div class="number-pagination">
+					<span>3</span>
+				</div>
+			</div>
+
+			<!-- Slider #4 -->
+			<div class="slider slide-4">
+				<img src="images\testing.jpg" alt="">
+				<div class="slider-content">
+					<h4>Page 4 name</h4>
+					<h2>Description of page 4</h2>
+					<button type="button" class="learn-more-btn" name="button">Learn More</button>
+				</div>
+				<div class="number-pagination">
+					<span>4</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="sectionTwo">
+		
+	</div>
+	<!-- <section class="content" id="firstSection">
 
 	</section>
+	<section class="content" id="secondSection">
+
+	</section> -->
 </body>
