@@ -14,10 +14,11 @@ function transparent(navbar) {
 function dropDownOpen() {
 	var dropdown = document.getElementsByClassName("dropdown-menu")
 	$(dropdown).dropdown('show')
-	
+
 }
 
 function dropDownClose() {
 	var dropdown = document.getElementsByClassName("dropdown-menu")
 	$(dropdown).dropdown('hide')
 }
+
