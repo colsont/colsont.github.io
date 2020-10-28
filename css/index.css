@@ -64,17 +64,49 @@ body {
 	display: flex;
 	height: 88vh;
 	width: 100%;
-	background-color: lightcoral;
 	order: 2;
 }
 
 .carousel-item img {
 	display: flex;
-	max-width: 200px;
-	max-height: 200px;
+	max-width: 90%;
+	max-height: 90%;
 	width: auto;
 	height: auto;
 	order: 2;
+	align-self: center;
+}
+
+.info h2 {
+	font-weight: bolder;
+	text-align: center;
+	margin-top: 10%;
+	font-size: 3.5rem;
+}
+
+.info h6 {
+	font-weight: lighter;
+	text-align: center;
+	line-height: 150%;
+	font-size: 1.5rem;
+}
+
+.buttonDiv {
+	padding: 25%;
+}
+
+.buttonDiv button {
+	background-color: var(--comp);
+	padding: 1rem;
+	border-radius: 25%;
+
+}
+
+/* Video */
+#video {
+	width: 100%;
+	height: 100%;
+	background-color: red;
 }
 
 /* Navbar */
@@ -171,4 +203,20 @@ nav {
 
 .review {
 	width: 25%;
+}
+
+.dropdown-menu {
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: .5s ease all;
+}
+
+.dropdown-menu.show {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0px);
+	transition: .5s ease all;
 }
