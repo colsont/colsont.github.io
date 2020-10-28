@@ -8,17 +8,24 @@ function opaque(navbar) {
 }
 
 function transparent(navbar) {
-	navbar.classList.toggle("bg-dark", window.scrollY > 0)
+	navbar.classList.toggle("bg-dark", window.scrollY > 0 && !($('#nav').is(':hover')))
 }
 
-function dropDownOpen() {
-	var dropdown = document.getElementsByClassName("dropdown-menu")
+$('.dropdown').on('show.bs.dropdown', function() {
+	$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+$('.dropdown').on('hide.bs.dropdown', function() {
+	$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
+
+function dropDownOpen(dropdown) {
 	$(dropdown).dropdown('show')
 
 }
 
-function dropDownClose() {
-	var dropdown = document.getElementsByClassName("dropdown-menu")
+function dropDownClose(dropdown) {
 	$(dropdown).dropdown('hide')
 }
 
+//document.getElementsByClassName("dropdown-menu").addEventListener("wheel", dropDownClose);
