@@ -25,7 +25,7 @@
 	<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="nav" onmouseover="opaque(this)"
 		onmouseout="transparent(this)">
 		<a class="navbar-brand" href="#">
-			<img src="images/roughdraft1.png" width="30" height="30" class="d-inline-block align-top" alt=""
+			<img src="images/roughdraft1.png" width="50" height="50" class="d-inline-block align-center" alt=""
 				loading="lazy"> EVE
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
@@ -44,24 +44,24 @@
 
 				<li class="nav-item dropdown" >
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="dropDownOpen()"
-						onmouseleave="dropDownClose()">
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="dropDownOpen(this)"
+						onmouseleave="dropDownClose(this)">
 						About Us
 					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen()"
-						onmouseleave="dropDownClose()" id="navDropdown1">
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
+						onmouseleave="dropDownClose(this)" id="navDropdown1">
 						<a class="dropdown-item" href="#">Company History</a>
 						<a class="dropdown-item" href="#">Staff and Members</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown" >
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="dropDownOpen2()"
-						onmouseleave="dropDownClose2()" >
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="dropDownOpen(this)"
+						onmouseleave="dropDownClose(this)" >
 						Partnerships & Plans
 					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen2()"
-						onmouseleave="dropDownClose2()" id="navDropdown2">
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
+						onmouseleave="dropDownClose(this)" id="navDropdown2">
 						<a class="dropdown-item" href="#">Company History</a>
 						<a class="dropdown-item" href="#">Staff and Members</a>
 					</div>
@@ -74,23 +74,71 @@
 	</nav>
 
 	<div class="section" id="sectionOne">
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active ">
 					<div class="row">
 						<div class="col-6 info">
-							<h2>Products</h2>
+							<h2>Partnerships & Plans</h2>
+							<h6>How EVE works with outside programs to help benefit our users!</h4>
+							<div class="row">
+								<div class="col-12 buttonDiv">
+									<button>Learn More</button>
+								</div>
+							</div>						
 						</div>
 						<div class="col-6">
-							<img src="images\testing.jpg" class="d-block w-100" alt="...">
+							<img src="images\PartnerShip.png" class="d-block w-100" alt="...">
 						</div>
 					</div>
 			 	</div>
 				<div class="carousel-item">
-					<img src="images\testing.jpg" class="d-block w-100" alt="...">
+					<div class="row">
+						<div class="col-6 info">
+							<h2>Products</h2>
+							<h6>The products offered by EVE to help ensure a better, healtiher future</h6>
+							<div class="row">
+								<div class="col-12 buttonDiv">
+									<button>Learn More</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<img src="images\Products.png" class="d-block w-100" alt="...">
+						</div>
+					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="images\testing.jpg" class="d-block w-100" alt="...">
+					<div class="row">
+						<div class="col-6 info">
+							<h2>News</h2>
+							<h6>The hottest news in the health world to ensure we all stay informed</h6>
+							<div class="row">
+								<div class="col-12 buttonDiv">
+									<button>Learn More</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<img src="images\News.png" class="d-block w-100" alt="...">
+						</div>
+					</div>		
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-6 info">
+							<h2>Our Staff</h2>
+							<h6>EVE's team of professionals who are leaders at heart</h6>
+							<div class="row">
+								<div class="col-12 buttonDiv">
+									<button>Learn More</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<img src="images\Staff.png" class="d-block w-100" alt="...">
+						</div>
+					</div>
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -104,7 +152,30 @@
 		</div>
 	</div>
 	<div class="section" id="sectionTwo">
-			
+		<div class="container">
+			<div class="row" id="videoSection">
+				<div class="col-1">
+					<p>EVE</p>
+				</div>
+				<div class="col-10">
+					<div id="video">
+						<br/>
+							<video width="320" height="240" controls>
+								<source src="movie.mp4" type="video/mp4">
+								<source src="movie.ogg" type="video/ogg">
+								Your browser does not support the video tag.
+							</video>
+						</iframe>
+					</div>
+				</div>
+				<div class="col-1">
+					<p>EVE</p>
+				</div>
+			</div>
+			<div class="row" id="videoButtons">
+
+			</div>
+		</div>
 	</div>
 	<div class="section" id="sectionThree">
 		<h2>EVE Inc. Customer Reviews </h2>
