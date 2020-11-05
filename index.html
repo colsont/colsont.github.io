@@ -38,6 +38,20 @@
 				<li class="nav-item active">
 					<a class="nav-link" href="#sectionOne">Products<span class="sr-only">(current)</span></a>
 				</li>
+
+				<li class="nav-item dropdown" >
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="dropDownOpen(this)"
+						onmouseleave="dropDownClose(this)" >
+						Partnerships & Plans
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
+						onmouseleave="dropDownClose(this)" id="navDropdown2">
+						<a class="dropdown-item" href="#">Company History</a>
+						<a class="dropdown-item" href="#">Staff and Members</a>
+					</div>
+				</li>
+
 				<li class="nav-item">
 					<a class="nav-link" href="#sectionTwo">News Updates</a>
 				</li>
@@ -52,22 +66,8 @@
 						onmouseleave="dropDownClose(this)" id="navDropdown1">
 						<a class="dropdown-item" href="#">Company History</a>
 						<a class="dropdown-item" href="#">Staff and Members</a>
+						<a class="dropdown-item" href="#">Contact Us</a>
 					</div>
-				</li>
-				<li class="nav-item dropdown" >
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="dropDownOpen(this)"
-						onmouseleave="dropDownClose(this)" >
-						Partnerships & Plans
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
-						onmouseleave="dropDownClose(this)" id="navDropdown2">
-						<a class="dropdown-item" href="#">Company History</a>
-						<a class="dropdown-item" href="#">Staff and Members</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contact Us</a>
 				</li>
 			</ul>
 		</div>
@@ -96,7 +96,7 @@
 					<div class="row">
 						<div class="col-6 info">
 							<h2>Products</h2>
-							<h6>The products offered by EVE to help ensure a better, healtiher future</h6>
+							<h6>The products offered by EVE to help ensure a better, healthier future</h6>
 							<div class="row">
 								<div class="col-12 buttonDiv">
 									<button>Learn More</button>
@@ -154,22 +154,24 @@
 	<div class="section" id="sectionTwo">
 		<div class="container">
 			<div class="row" id="videoSection">
-				<div class="col-1">
-					<p>EVE</p>
-				</div>
-				<div class="col-10">
-					<div id="video">
-						<br/>
-							<video width="320" height="240" controls>
-								<source src="movie.mp4" type="video/mp4">
-								<source src="movie.ogg" type="video/ogg">
-								Your browser does not support the video tag.
-							</video>
-						</iframe>
+				<div class="col-1 iconSections">
+					<div class="videoIcon">
+						<button id="btn1" onclick="changeVideo1()"></button>
+						<button></button>
 					</div>
 				</div>
-				<div class="col-1">
-					<p>EVE</p>
+				<div class="col-10"> 
+					<div id="videoHolder">
+						<video id="video" width="900" height="506.25" loop controls>
+							Your browser does not support the video tag.
+						</video>	
+					</div>
+				</div>
+				<div class="col-1 iconSections">
+					<div class="videoIcon">
+						<button></button>
+						<button></button>
+					</div>
 				</div>
 			</div>
 			<div class="row" id="videoButtons">
@@ -177,8 +179,29 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="section" id="sectionThree">
-		<h2>EVE Inc. Customer Reviews </h2>
+		<h2><strong>EVE Inc. Customer Reviews</strong></h2>
+		<br>
+		<br>
+
+		<div id="reviews" class="justify-content-around">
+			<div class="review1">
+				<img src="images\person1.jpg" class="rounded-circle" alt="person1">
+				<p>Mr. Bonkomonko</p>
+				<p class="secondary" style="font-size: 16px;">Syracuse, NY</p>
+			</div>
+			<div class="review2">
+				
+			</div>
+			<div class="review3">
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="section" id="sectionThree">
+		<h2>EVE Inc. Customer Reviews</h2>
 
 		<div id="reviews" class="justify-content-around">
 			<div class="review">
@@ -214,6 +237,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </body>
 </html>
