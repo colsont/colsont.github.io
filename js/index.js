@@ -28,4 +28,20 @@ function dropDownClose(dropdown) {
 	$(dropdown).dropdown('hide')
 }
 
+
+function changeVideo1() {
+	var btn1 = document.getElementById("btn1")
+	btn1.classList.toggle("bg-dark", true)
+	var source = document.createElement("source")
+	var videoSource = document.getElementById("video")
+	videoSource.appendChild(source)
+	videoSource.getElementsByTagName("source").createAttribute("src")
+	videoSource.children.src = "images\Aerial Shot Of City.mp4";
+	console.log(videoSource)
+
+	videoSource.load()
+	videoSource.play()
+	
+}
+
 //document.getElementsByClassName("dropdown-menu").addEventListener("wheel", dropDownClose);
