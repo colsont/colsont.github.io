@@ -12,33 +12,61 @@
 
 }
 
+body {
+    background-color: var(--rev);
+}
+
 .container {
     padding-top: 2%;
-    margin-top: 12vh;
 }
+
+#heading {
+    margin-top: 12vh;
+
+    background-image: url("/images/daphne-fecheyr-okosdF_CC4Q-unsplash.jpg");
+    padding-bottom: 10vh;
+}
+
+#heading h1 {
+    color: var(--textColor);
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
+    line-height: 10vh;
+    padding-top: 5vh;
+}
+
 
 .card-body {
     color: var(--textColor);
-    background-color: var(--comp);
+    background-color: linear-gradient(166deg, rgba(255, 255, 255, 1) 0%, rgba(216, 226, 228, 1) 100%);
+    ;
     /* margin: 2% 2% 0% 2%;
     border-radius: 2%; */
 }
 
 .card {
     /* padding: 2%; */
-    border: var(--comp);
+    border: linear-gradient(166deg, rgba(255, 255, 255, 1) 0%, rgba(216, 226, 228, 1) 100%);
 }
 
 img.card-img-bottom {
-    background-color: var(--comp);
+    background-color: linear-gradient(166deg, rgba(255, 255, 255, 1) 0%, rgba(216, 226, 228, 1) 100%) !important;
 }
 
 .card img {
     padding: 2%;
-    background-color: var(--comp);
+    background-color: linear-gradient(166deg, rgba(255, 255, 255, 1) 0%, rgba(216, 226, 228, 1) 100%);
+    border-radius: 100%;
 }
 
+.hoverover {
+    z-index: -1;
+}
 
+#intro {
+    opacity: 0;
+}
 
 .overlayingText {
     position: relative;
