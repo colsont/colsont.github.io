@@ -18,13 +18,14 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.4.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 <body>
 	<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="nav" onmouseover="opaque(this)"
 		onmouseout="transparent(this)">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="index.html">
 			<img src="images/roughdraft1.png" width="50" height="50" class="d-inline-block align-center" alt=""
 				loading="lazy"> EVE
 		</a>
@@ -36,10 +37,10 @@
 		<div class="collapse navbar-collapse" id="navbarToggler">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#sectionOne">Products<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="products.html">What we offer<span class="sr-only">(current)</span></a>
 				</li>
 
-				<li class="nav-item" >
+				<li class="nav-item">
 					<a class="nav-link" href="#" id="navbarDropdownMenuLink">
 						Partnerships & Plans
 					</a>
@@ -54,10 +55,10 @@
 					<a class="nav-link" href="#sectionTwo">News Updates</a>
 				</li>
 
-				<li class="nav-item dropdown" >
+				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="dropDownOpen(this)"
-						onmouseleave="dropDownClose(this)">
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+						onmouseover="dropDownOpen(this)" onmouseleave="dropDownClose(this)">
 						About Us
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
@@ -69,7 +70,7 @@
 				</li>
 			</ul>
 		</div>
-	</nav>
+    </nav>
 
 	<div class="section" id="sectionOne">
 		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
@@ -79,29 +80,29 @@
 						<div class="col-6 info">
 							<h2>Partnerships & Plans</h2>
 							<h6>How EVE works with outside programs to help benefit our users!</h4>
-							<div class="row">
-								<div class="col-12 btnContainer">
-									<div class="buttonDiv">
-										<button>Learn More</button>
+								<div class="row">
+									<div class="col-12 btnContainer">
+										<div class="buttonDiv">
+											<button>Learn More</button>
+										</div>
 									</div>
 								</div>
-							</div>						
 						</div>
 						<div class="col-6">
 							<img src="images\PartnerShip.png" class="d-block w-100" alt="...">
 						</div>
 					</div>
-			 	</div>
+				</div>
 				<div class="carousel-item">
 					<div class="row">
 						<div class="col-6 info">
-							<h2>Products</h2>
-							<h6>The products offered by EVE to help ensure a better, healthier future</h6>
+							<h2>What we offer</h2>
+							<h6>What EVE offers to help ensure a better, healthier future</h6>
 							<div class="row">
 								<div class="col-12 btnContainer">
 									<div class="buttonDiv">
 										<button>Learn More</button>
-									</div>								
+									</div>
 								</div>
 							</div>
 						</div>
@@ -126,7 +127,7 @@
 						<div class="col-6">
 							<img src="images\News.png" class="d-block w-100" alt="...">
 						</div>
-					</div>		
+					</div>
 				</div>
 				<div class="carousel-item">
 					<div class="row">
@@ -137,7 +138,7 @@
 								<div class="col-12 btnContainer">
 									<div class="buttonDiv">
 										<button>Learn More</button>
-									</div>								
+									</div>
 								</div>
 							</div>
 						</div>
@@ -166,11 +167,11 @@
 						<button></button>
 					</div>
 				</div>
-				<div class="col-10"> 
+				<div class="col-10">
 					<div id="videoHolder">
-						<video id="video" width="900" height="506.25" loop controls>
+						<video src="images\Aerial Shot Of City.mp4" id="video1" class="video" width="900" height="506.25" loop controls>
 							Your browser does not support the video tag.
-						</video>	
+						</video>
 					</div>
 				</div>
 				<div class="col-1 iconSections">
@@ -187,22 +188,18 @@
 	</div>
 
 	<div class="section" id="sectionThree">
-		<h2><strong>EVE Inc. Customer Reviews</strong></h2>
-		<br>
-		<br>
-
 		<div id="reviews" class="justify-content-around">
-				<div id="review1" class="review">
-					<img src="images\person1.png"  alt="person1">
-				</div>
-				<div id="review2" class="review">
-					<img src="images\person2.png"  alt="person1">
-				</div>
-				<div id="review3" class="review">
-					<img src="images\person3.png" alt="person1">
-				</div>
+			<div id="review1" class="reviewButtons" onclick="carouselAni(this)">
+				<img src="images\person1.png" alt="person1">
+			</div>
+			<div id="review2" class="reviewButtons" onclick="carouselAni(this)">
+				<img src="images\person2.png" alt="person1">
+			</div>
+			<div id="review3" class="reviewButtons" onclick="carouselAni(this)">
+				<img src="images\person3.png" alt="person1">
 			</div>
 		</div>
+	</div>
 	</div>
 
 	<!-- <div class="section" id="sectionThree">
@@ -244,4 +241,5 @@
 		</div>
 	</div> -->
 </body>
+
 </html>
