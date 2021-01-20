@@ -1,0 +1,46 @@
+:root {
+    /* --mainBgColor: #494d5f;
+	--textcolor: #a0d2e8;
+	--comp: #3a3e50; */
+    /* --mainBgColor: #aabec6;
+	--textColor: #1c2433;
+	--comp: #82a5ba; */
+    --mainBgColor: #f1f0ee;
+    --textColor: #183f49;
+    --comp: #7acfd6;
+    --rev: #d9fbff;
+
+}
+
+.container {
+    padding-top: 2%;
+    margin-top: 12vh;
+}
+
+.card-body {
+    color: var(--textColor);
+    background-color: var(--comp);
+    /* margin: 2% 2% 0% 2%;
+    border-radius: 2%; */
+}
+
+.card {
+    /* padding: 2%; */
+    border: var(--comp);
+}
+
+img.card-img-bottom {
+    background-color: var(--comp);
+}
+
+.card img {
+    padding: 2%;
+    background-color: var(--comp);
+}
+
+
+
+.overlayingText {
+    position: relative;
+    z-index: -1;
+}
