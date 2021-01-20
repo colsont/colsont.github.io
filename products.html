@@ -67,32 +67,49 @@
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
 						onmouseleave="dropDownClose(this)" id="navDropdown1">
 						<a class="dropdown-item" href="#">Company History</a>
-						<a class="dropdown-item" href="#">Staff and Members</a>
-						<a class="dropdown-item" href="#">Contact Us</a>
+						<a class="dropdown-item" href="aboutUs.html">Staff and Members</a>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</nav>
-
+	<!-- <div class="row"> -->
+	<div class="col-12-sm" id="heading">
+		<h1>Learn About Eve's services</h1>
+	</div>
+<!-- </div> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12-sm">
+				<div class="card" id="intro" style="opacity: 0;">
+					<div class="card-body">
+						<h1>EVE wants to make sure you can live your best, healthiest home; reguardless of the situation.</h1>
+						<p>Life throws curveballs everyday and it can be hard to stay on top of everything.  In today's world where going outside to a public space is a blessing, EVE intends to offer everything that we can to ensure that you stay healthy at home.</p>
+						<br>
+						<h3>Hover over the boxes to learn more about what EVE offers!</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<div class="card mb-3">
+				<div class="card mb-3" id="card1" onmouseover="hoverCover(this)" onmouseout="offCover(this)">
 					<img src="images\gabriel-benois-qnWPjzewewA-unsplash.jpg" id="img1" class="card-img-top" alt="...">
 					<div class="card-body">
-						<h5 class="card-title">On-Demand Calls</h5>
-						<p class="card-text">EVE offers on demand video calls with personel that can get you the help
+						<h2 class="card-title">On-Demand Calls</h2>
+						<p class="card-text para">EVE offers on demand video calls with personel that can get you the help
 							you need.</p>
 						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-6">
-				<div class="card">
+				<div class="card" id="card2" onmouseover="hoverCover(this)" onmouseout="offCover(this)">
 					<div class="card-body">
-						<h5 class="card-title">Expert Personel</h5>
-						<p class="card-text">EVE provides a group of dedicated professionals who are able to meet and
+						<h2 class="card-title">Expert Personel</h2>
+						<p class="card-text para">EVE provides a group of dedicated professionals who are able to meet and
 							serve our patients medical needs.</p>
 						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 					</div>
@@ -102,21 +119,21 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-6">
-				<div class="card mb-3" id="" onmouseover="hoverCover(this)" onmouseout="offCover(this)">
+				<div class="card mb-3" id="card3" onmouseover="hoverCover(this)" onmouseout="offCover(this)">
 					<img src="images\gael-gaborel-f7I8uEiYkag-unsplash.jpg" id="img3" class="card-img-top" alt="...">
 					<div class="card-body">
-						<h5 class="card-title">Global Coverage</h5>
-						<p class="card-text">EVE knows no boundries set by borders and it is our mission to ensure that
+						<h2 class="card-title">Global Coverage</h2>
+						<p class="card-text para">EVE knows no boundries set by borders and it is our mission to ensure that
 							everyone gets the help they deserve</p>
 						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-6">
-				<div class="card">
+				<div class="card" id="card4" onmouseover="hoverCover(this)" onmouseout="offCover(this)">
 					<div class="card-body">
-						<h5 class="card-title">Innovative and Sustability</h5>
-						<p class="card-text">EVE's framework ensures that our system will continue to work with our
+						<h2 class="card-title">Innovative and Sustability</h2>
+						<p class="card-text para">EVE's framework ensures that our system will continue to work with our
 							constantly changing world. As innovations are introduced EVE is prepared.</p>
 						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 					</div>
@@ -124,4 +141,6 @@
 				</div>
 			</div>
 		</div>
+
+	</div>
 </body>
