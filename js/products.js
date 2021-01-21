@@ -1,81 +1,67 @@
-window.addEventListener("scroll", function () {
-	var navbar = document.getElementById("nav")
-	navbar.classList.toggle("bg-dark", window.scrollY > 0)
-})
 
-function opaque(navbar) {
-	navbar.classList.toggle("bg-dark", true)
+function ifStatement(cardID){
+    if(cardID == "card1") {
+        var image = document.getElementById("img1")
+        var box = 0
+        var info = "Card 1 is being hovered over rn.  DFKSJLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"
+    } else if(cardID == "card2") {
+        var image = document.getElementById("img2")
+        var box = 1
+        var info = "Card 2 is being hovered over rn.  DFKSJLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"
+    } else if(cardID == "card3") {
+        var image = document.getElementById("img3")
+        var box = 2
+        var info = "Card 3 is being hovered over rn.  DFKSJLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"
+    } else if(cardID == "card4") {
+        var image = document.getElementById("img4")
+        var box = 3
+        var info = "Card 4 is being hovered over rn.  DFKSJLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"
+    };
+    return [image, box, info]
 }
 
-function transparent(navbar) {
-	navbar.classList.toggle("bg-dark", window.scrollY > 0 && !($('#nav').is(':hover')))
-}
-
-$('.dropdown').on('show.bs.dropdown', function() {
-	$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-});
-
-$('.dropdown').on('hide.bs.dropdown', function() {
-	$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-});
-
-function dropDownOpen(dropdown) {
-	$(dropdown).dropdown('show')
-
-}
-
-function dropDownClose(dropdown) {
-	$(dropdown).dropdown('hide')
-}
-
-
-
-function changeVideo1() {
-	var btn1 = document.getElementById("btn1")
-	btn1.classList.toggle("bg-dark", true)
-	var source = document.createElement("source")
-	var videoSource = document.getElementById("video1")
-	videoSource.style.visibility = "hidden"
-};
-
-function carouselAni(button) {
-	var displaying = 0
-	button.classList.toggle("bg-dark", true)
-	var review1 = document.getElementById("review1")
-	var review2 = document.getElementById("review2")
-	var review3 = document.getElementById("review3")
-	var dim = button.getBoundingClientRect();
-	var limit = review3.getBoundingClientRect();
-	var a = dim.right
-	var b = limit.right
-	var c = b - a
-	var i;
-	if(button.id == "review1"){
-		review2.style.opacity = "0"
-		review3.style.opacity = "0"
-		var displaying = 1
-	} else if (button.id == "review2") {
-		review1.style.opacity = "0"
-		review3.style.opacity = "0"
-		var displaying = 2
-	} else {
-		review2.style.opacity = "0"
-		review1.style.opacity = "0"
-		var displaying = 3
-	};
-	if (displaying == 1) {
-
-	} else if(displaying == 2) {
-
-	} else if (displaying == 3){
-
-	} else {
-		console.log("Something is wrong!")
-	};
-	$(button).animate({left: c + 'px'});
-	var para = document.createElement("h4")
-
+function hoverCover(card) {
+    var cardID = card.id
+    var content = ifStatement(cardID)
+    content[0].classList.add("hoverover")
+    var hoverText = document.getElementsByClassName("para")
+    hoverText[content[1]].innerHTML = content[2]
+    console.log("It's working")
 
 };
 
-//document.getElementsByClassName("dropdown-menu").addEventListener("wheel", dropDownClose);
+function offCover(card) {
+    var cardID = card.id
+
+    if(cardID == "card1") {
+        var image = document.getElementById("img1")
+        var box = 0
+        var info = "EVE offers on demand video calls with personel that can get you the help you need."
+    } else if(cardID == "card2") {
+        var image = document.getElementById("img2")
+        var box = 1
+        var info = "EVE provides a group of dedicated professionals who are able to meet and serve our patients medical needs."
+    } else if(cardID == "card3") {
+        var image = document.getElementById("img3")
+        var box = 2
+        var info = "EVE knows no boundries set by borders and it is our mission to ensure that everyone gets the help they deserve"
+    } else if(cardID == "card4") {
+        var image = document.getElementById("img4")
+        var box = 3
+        var info = "EVE's framework ensures that our system will continue to work with our constantly changing world. As innovations are introduced EVE is prepared."
+    };
+    image.classList.remove("hoverover")
+    var hoverText = document.getElementsByClassName("para")
+    hoverText[box].innerHTML = info
+    console.log("It's off")
+};
+
+
+window.onscroll = function(ev) {
+    // if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        var intro = document.getElementById("intro")
+        intro.style.opacity = "1"
+    // }
+};
+
+
