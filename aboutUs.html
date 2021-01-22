@@ -16,59 +16,57 @@
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/index.js"></script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-    <nav class="navbar bg-dark navbar-dark navbar-expand-lg fixed-top" id="nav">
-    <a class="navbar-brand" href="index.html">
-        <img src="images/roughdraft1.png" width="50" height="50" class="d-inline-block align-center" alt=""
-            loading="lazy"> EVE
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+	<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="nav" onmouseover="opaque(this)"
+		onmouseout="transparent(this)">
+		<a class="navbar-brand" href="index.html">
+			<img src="images/roughdraft1.png" width="50" height="50" class="d-inline-block align-center" alt=""
+				loading="lazy"> EVE
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+			aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-    <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="products.html">What we offer<span class="sr-only">(current)</span></a>
-            </li>
+		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="products.html">What we offer<span class="sr-only">(current)</span></a>
+				</li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="navbarDropdownMenuLink">
-                    Partnerships & Plans
-                </a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
-                    onmouseleave="dropDownClose(this)" id="navDropdown2">
-                    <a class="dropdown-item" href="#">Company History</a>
-                    <a class="dropdown-item" href="#">Staff and Members</a>
-                </div> -->
-            </li>
+				<li class="nav-item">
+					<a class="nav-link" href="PartAndPlans.html" id="navbarDropdownMenuLink">
+						Partnerships & Plans
+					</a>
+					<!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
+						onmouseleave="dropDownClose(this)" id="navDropdown2">
+						<a class="dropdown-item" href="#">Company History</a>
+						<a class="dropdown-item" href="#">Staff and Members</a>
+					</div> -->
+				</li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#sectionTwo">News Updates</a>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    onmouseover="dropDownOpen(this)" onmouseleave="dropDownClose(this)">
-                    About Us
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
-                    onmouseleave="dropDownClose(this)" id="navDropdown1">
-                    <a class="dropdown-item" href="#">Company History</a>
-                    <a class="dropdown-item" href="#">Staff and Members</a>
-                    <a class="dropdown-item" href="aboutUs.html">Contact Us</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-    </nav>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+						onmouseover="dropDownOpen(this)" onmouseleave="dropDownClose(this)">
+						About Us
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
+						onmouseleave="dropDownClose(this)" id="navDropdown1">
+						<a class="dropdown-item" href="timeline.html">Company History</a>
+						<a class="dropdown-item" href="aboutUs.html">Staff and Members</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
     <div class="about-section">
         <h1>About Us</h1>
@@ -95,10 +93,10 @@
             <div class="card">
                 <img src="/images/photo-1523307730650-594bc63f9d67.jpeg" alt="Lisa" style="width:100%">
                 <div class="container">
-                    <h2>Zach Badinger</h2>
+                    <h2>Evan Curtin</h2>
                     <p class="title">CFO & Director</p>
                     <i>"Just make something up."</i>
-                    <p>zach@eve.com</p>
+                    <p>evan@eve.com</p>
                     <p><button class="button">Contact</button></p>
                 </div>
             </div>

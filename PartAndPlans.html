@@ -3,73 +3,215 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>EVE Telemedicine</title>
-	<link rel="icon" href="images/roughdraft1.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EVE Telemedicine</title>
+    <link rel="icon" href="images/roughdraft1.png">
 
-	<link href="css/index.css" rel="stylesheet" type="text/css">
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/PartAndPlans.css" type="text/css">
 
 
 
-	<script src="js/index.js"></script>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap-4.4.1.js"></script>
-	<script src="js/products.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/products.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="nav" onmouseover="opaque(this)"
-    onmouseout="transparent(this)">
-    <a class="navbar-brand" href="index.html">
-        <img src="images/roughdraft1.png" width="50" height="50" class="d-inline-block align-center" alt=""
-            loading="lazy"> EVE
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+	<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="nav" onmouseover="opaque(this)"
+		onmouseout="transparent(this)">
+		<a class="navbar-brand" href="index.html">
+			<img src="images/roughdraft1.png" width="50" height="50" class="d-inline-block align-center" alt=""
+				loading="lazy"> EVE
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+			aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-    <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="products.html">What we offer<span class="sr-only">(current)</span></a>
-            </li>
+		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="products.html">What we offer<span class="sr-only">(current)</span></a>
+				</li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="navbarDropdownMenuLink">
-                    Partnerships & Plans
-                </a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
-                    onmouseleave="dropDownClose(this)" id="navDropdown2">
-                    <a class="dropdown-item" href="#">Company History</a>
-                    <a class="dropdown-item" href="#">Staff and Members</a>
-                </div> -->
-            </li>
+				<li class="nav-item">
+					<a class="nav-link" href="PartAndPlans.html" id="navbarDropdownMenuLink">
+						Partnerships & Plans
+					</a>
+					<!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
+						onmouseleave="dropDownClose(this)" id="navDropdown2">
+						<a class="dropdown-item" href="#">Company History</a>
+						<a class="dropdown-item" href="#">Staff and Members</a>
+					</div> -->
+				</li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#sectionTwo">News Updates</a>
-            </li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+						onmouseover="dropDownOpen(this)" onmouseleave="dropDownClose(this)">
+						About Us
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
+						onmouseleave="dropDownClose(this)" id="navDropdown1">
+						<a class="dropdown-item" href="timeline.html">Company History</a>
+						<a class="dropdown-item" href="aboutUs.html">Staff and Members</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    onmouseover="dropDownOpen(this)" onmouseleave="dropDownClose(this)">
-                    About Us
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
-                    onmouseleave="dropDownClose(this)" id="navDropdown1">
-                    <a class="dropdown-item" href="#">Company History</a>
-                    <a class="dropdown-item" href="aboutUs.html">Staff and Members</a>
+    <!-- Fund -->
+    <div id="section2" style="background-image: url('images\PartnerShip.png');">
+        <div class="container top" style="padding-top: 3vh; padding-bottom: 0vh;">
+            <div class="row align-items-center">
+                <div class="card col-sm-9" style="width: 18rem;">
+                    <div class="card-body">
+                    <h1 class="card-title">EVE X TotallyRealMedicine "Innovation for All" plan and fund.</h1>
+                    <p class="card-text">EVE has partnered with TotallyRealMedicine in producing medicine around the globe. The focus is currently shifted to producing a COVID-19 vaccine in which EVE has funded along with other companies. EVE’s goals include lowering global prices for ALL medicine, and helping end the COVID-19 pandemic. </p>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
-</nav>
+    <div id="section1">
+        <div class="container top">
+            <div class="row">
+                <div class="col-4-sm">
+                    <div class="card flip-card" style="width: 18rem;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images\pic1 (1).jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Where we help</h3>
+                                <p>This fund is aimed to help lower income communities that could greatly use our fund.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4-sm">
+                    <div class="card flip-card" style="width: 18rem;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images\pic2.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>The Fund</h1>
+                                <p>The goal of this plan is to create a fund that can help those who need it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4-sm">
+                    <div class="card flip-card" style="width: 18rem;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images\pic3.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>The goal</h1>
+                                <p>At EVE, we believe access to technology and medicine are basic human rights-that’s so
+                                    our
+                                    plan ensures this is established.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4-sm">
+                    <div class="card flip-card" style="width: 18rem;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images\pic4.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Renewable Energy</h2>
+                                <p>This plan will help us create renewable sources of energy which will protect the
+                                    environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4-sm">
+                    <div class="card" style="width: 18rem;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images\middle.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4-sm">
+                    <div class="card flip-card" style="width: 18rem;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images\med.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Supplying Medicine</h2>
+                                <p>Part of our fund will be spent to help fund the purchasing of medicine for those who
+                                    couldn't get it otherwise.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4-sm">
+                    <div class="card flip-card" style="width: 18rem;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images\tech.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Supplying tech</h2>
+                                <p>Our fund also aims to help install technology in areas where there is none present.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4-sm">
+                    <div class="card flip-card" style="width: 18rem;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images\Food.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Food Prep</h1>
+                                <p>Part of the I.F.A. fund will also be used to help prepare food in areas of the world
+                                    that
+                                    need it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4-sm">
+                    <div class="card flip-card" style="width: 18rem;">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images\help.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Your role...</h1>
+                                <p>Continue to inform yourself and support EVE so that we can continue to help the
+                                    people
+                                    that rightly deserve it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>

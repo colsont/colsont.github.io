@@ -23,7 +23,8 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="nav">
+	<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="nav" onmouseover="opaque(this)"
+		onmouseout="transparent(this)">
 		<a class="navbar-brand" href="index.html">
 			<img src="images/roughdraft1.png" width="50" height="50" class="d-inline-block align-center" alt=""
 				loading="lazy"> EVE
@@ -40,7 +41,7 @@
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link" href="#" id="navbarDropdownMenuLink">
+					<a class="nav-link" href="PartAndPlans.html" id="navbarDropdownMenuLink">
 						Partnerships & Plans
 					</a>
 					<!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
@@ -50,26 +51,21 @@
 					</div> -->
 				</li>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#sectionTwo">News Updates</a>
-				</li>
-
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button"
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
 						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
 						onmouseover="dropDownOpen(this)" onmouseleave="dropDownClose(this)">
 						About Us
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" onmouseover="dropDownOpen(this)"
 						onmouseleave="dropDownClose(this)" id="navDropdown1">
-						<a class="dropdown-item" href="timeline.html">Company Timeline</a>
+						<a class="dropdown-item" href="timeline.html">Company History</a>
 						<a class="dropdown-item" href="aboutUs.html">Staff and Members</a>
 					</div>
 				</li>
 			</ul>
 		</div>
-    </nav>
-
+	</nav>
 	<div class="section" id="sectionOne">
 		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner">
@@ -112,8 +108,8 @@
 				<div class="carousel-item">
 					<div class="row">
 						<div class="col-6 info">
-							<h2>News</h2>
-							<h6>The hottest news in the health world to ensure we all stay informed</h6>
+							<h2>Company History</h2>
+							<h6>Learn more about the history behind EVE and how we got to the point we are at now.</h6>
 							<div class="row">
 								<div class="col-12 btnContainer">
 									<div class="buttonDiv">
@@ -156,7 +152,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="section" id="sectionTwo">
+	<!-- <div class="section" id="sectionTwo">
 		<div class="container">
 			<div class="row" id="videoSection">
 				<div class="col-1 iconSections">
@@ -183,18 +179,41 @@
 
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="section" id="sectionThree">
-		<div id="reviews" class="justify-content-around">
-			<div id="review1" class="reviewButtons" onclick="carouselAni(this)">
-				<img src="images\person1.png" alt="person1">
-			</div>
-			<div id="review2" class="reviewButtons" onclick="carouselAni(this)">
-				<img src="images\person2.png" alt="person1">
-			</div>
-			<div id="review3" class="reviewButtons" onclick="carouselAni(this)">
-				<img src="images\person3.png" alt="person1">
+		<div id="reviews" class="container">
+			<div class="row">
+
+				<div class="col-md-4 review">
+					<div class="reviewText">
+						<h3>Joshua P.</h3>
+						<p>I really found EVE to be beneficial in my life.  After everything going on with Corona it was nice to know that we have companies that are willing to adapt with the times.</p>
+					</div>
+					<div id="review1" class="reviewButtons" onclick="clickedAni(this)">
+						<img src="images\person1.png" alt="person1">
+					</div>
+				</div>
+				<div class="col-md-4 review">
+					<div class="reviewText">
+						<h3>Jessica Q.</h3>
+						<p>EVE is amazing!  Thanks to them my sick 6 year old was able to get a perscription for his sickness, despite the fact that we constrained at home.</p>
+					</div>
+					<div id="review2" class="reviewButtons" onclick="clickedAni(this)">
+						<img src="images\person2.png" alt="person1">
+					</div>
+
+				</div>
+				<div class="col-md-4 review">
+					<div class="reviewText">
+						<h3>JBree L.</h3>
+						<p>What the people here are doing is 100 percent the future of medicine.  Being able to adapt to whatever life throws at us nowadays is no problem for EVE.</p>
+					</div>
+					<div id="review3" class="reviewButtons" onclick="clickedAni(this)">
+						<img src="images\person3.png" alt="person1">
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</div>
