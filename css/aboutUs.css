@@ -25,12 +25,12 @@ html {
     margin: 8px;
 }
 
-.about-section {
+#about-section {
     padding: 50px;
+    padding-top: 24vh;
     text-align: center;
-    background-color: #82d7df;
-    color: white;
-    margin-top: 12vh;
+    height: 50vh;
+    background-image: url("/images/anastasia-taioglou-xK4loR7lmnM-unsplash.jpg") !important;
 }
 
 .container {
@@ -45,6 +45,7 @@ html {
 }
 
 .title {
+
     color: grey;
 }
 
