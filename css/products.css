@@ -21,10 +21,8 @@ body {
 }
 
 #heading {
-    margin-top: 12vh;
-
     background-image: url("/images/daphne-fecheyr-okosdF_CC4Q-unsplash.jpg");
-    padding-bottom: 10vh;
+    padding-bottom: 22vh;
 }
 
 #heading h1 {
@@ -33,7 +31,7 @@ body {
     vertical-align: middle;
     font-weight: bolder;
     line-height: 10vh;
-    padding-top: 5vh;
+    padding-top: 20vh;
 }
 
 
@@ -61,7 +59,7 @@ img.card-img-bottom {
 }
 
 .hoverover {
-    z-index: -1;
+    border-radius: 5% !important;
 }
 
 #intro {
@@ -69,6 +67,6 @@ img.card-img-bottom {
 }
 
 .overlayingText {
-    position: relative;
-    z-index: -1;
+    font-weight: bolder;
+    font-size: 20px;
 }
