@@ -1,72 +1,109 @@
-:root {
-    /* --mainBgColor: #494d5f;
-	--textcolor: #a0d2e8;
-	--comp: #3a3e50; */
-    /* --mainBgColor: #aabec6;
-	--textColor: #1c2433;
-	--comp: #82a5ba; */
-    --mainBgColor: #f1f0ee;
-    --textColor: #183f49;
-    --comp: #7acfd6;
-    --rev: #d9fbff;
-
-}
-
 body {
-    background-color: var(--rev);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
-.container {
-    padding-top: 2%;
+html {
+    box-sizing: border-box;
 }
 
-#heading {
-    background-image: url("/images/daphne-fecheyr-okosdF_CC4Q-unsplash.jpg");
-    padding-bottom: 22vh;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-#heading h1 {
-    color: var(--textColor);
-    text-align: center;
-    vertical-align: middle;
-    font-weight: bolder;
-    line-height: 10vh;
-    padding-top: 20vh;
-}
-
-
-.card-body {
-    color: var(--textColor);
-    background-color: linear-gradient(166deg, rgba(255, 255, 255, 1) 0%, rgba(216, 226, 228, 1) 100%);
-    ;
-    /* margin: 2% 2% 0% 2%;
-    border-radius: 2%; */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
 }
 
 .card {
-    /* padding: 2%; */
-    border: linear-gradient(166deg, rgba(255, 255, 255, 1) 0%, rgba(216, 226, 228, 1) 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
 }
 
-img.card-img-bottom {
-    background-color: linear-gradient(166deg, rgba(255, 255, 255, 1) 0%, rgba(216, 226, 228, 1) 100%) !important;
+#about-section {
+    padding: 50px;
+    padding-top: 24vh;
+    text-align: center;
+    height: 50vh;
+    background-image: url("/images/anastasia-taioglou-xK4loR7lmnM-unsplash.jpg") !important;
 }
 
-.card img {
-    padding: 2%;
-    background-color: linear-gradient(166deg, rgba(255, 255, 255, 1) 0%, rgba(216, 226, 228, 1) 100%);
-    border-radius: 100%;
+.container {
+    padding: 0 16px;
 }
 
-.hoverover {
-    border-radius: 5% !important;
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-#intro {
-    opacity: 0;
+.title {
+
+    color: grey;
 }
 
-.overlayingText {
-    font-weight: bolder;
-    font-size: 20px;
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #82d7df;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #77c7ce;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
