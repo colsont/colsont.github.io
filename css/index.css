@@ -229,6 +229,12 @@ a.nav-link {
 nav {
 	top: 0;
 	width: 100%;
+	z-index: 1000;
+}
+
+.carousel-control-prev {
+	position: absolute;
+	left: 100%;
 }
 
 /* Carosuel */
@@ -252,7 +258,6 @@ nav {
 	text-align: center;
 }
 
-.hoverover {}
 
 /*
 .reviewButtons h5 {
@@ -296,7 +301,7 @@ nav {
 .section {
 	margin: 0 0 0 0;
 	padding: 0;
-	max-height: 88vh;
+	max-height: 100vh;
 	min-height: 88vh;
 	max-width: 100%;
 	min-width: 100%;
