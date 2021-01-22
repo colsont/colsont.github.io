@@ -64,5 +64,3 @@ window.onscroll = function(ev) {
         intro.style.opacity = "1"
     // }
 };
-
-
