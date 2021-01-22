@@ -53,7 +53,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	background-color: rgba(130, 215, 223, 0.5);
+	background-color: #ffffff;
 }
 
 nav#nav.navbar-dark.navbar-expand-lg.fixed-top.bg-dark {
@@ -191,6 +191,8 @@ nav {
 #section2 .card {
 	background-color: var(--rev);
 	box-shadow: rgba(0, 0, 0, 0.5);
+	border-color: #82d7df;
+	border-width: 4px;
 	z-index: 1;
 }
 
