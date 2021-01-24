@@ -16,6 +16,7 @@ html {
 #about-section {
     width: 53%;
     margin: 0 auto;
+    bottom: 20px;
 }
 
 .column {
