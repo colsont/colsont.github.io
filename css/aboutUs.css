@@ -13,6 +13,11 @@ html {
     box-sizing: inherit;
 }
 
+#about-section {
+    width: 53%;
+    margin: 0 auto;
+}
+
 .column {
     float: left;
     width: 33.3%;
