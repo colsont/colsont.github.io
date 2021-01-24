@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	color: #000;
+	transition: all 500ms ease;
+	font-family: 'Poppins', sans-serif;
+	background-color: #f1f0ee;
+}
+
+a:visited {
+	color: #000;
+}
+
+.section {
+	width: 100%;
+	text-align: center;
+	margin-top: 12vh;
+}
+
+.show {
+	background-color: #f1f0ee !important;
+}
+
+.sectionHeader {
+	text-align: center;
+	width: 100%;
+	background-color: #f1f0ee;
+}
+
+.sectionHeader p {
+	font-size: 12pt;
+}
+
+.nav-link {
+	width: 100%;
+	line-height: 30px;
+	vertical-align: middle;
+	border: none !important;
+}
+
+.nav-link.active {
+	background-color: #82d7df !important;
+	border-color: #7acdf6 !important;
+	color: #fff !important;
+	font-weight: bold;
+}
+
+#refMenu {
+	width: 90%;
+	height: 30px;
+	margin: 0 auto;
+	text-align: center;
+	border: none;
+}
+
+.tab-pane {
+	position: absolute;
+	top: 160px;
+	left: 25%;
+	width: 50%;
+	margin: 0 auto;
+}
